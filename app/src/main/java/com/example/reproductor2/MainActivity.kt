@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.reproductor2.AppConstant.Companion.LOG_MAIN_ACTIVITY
 import com.example.reproductor2.AppConstant.Companion.MEDIA_PLAYER_POSITION
-import com.example.reproductor2.AppConstant.Companion
 import com.example.reproductor2.AppConstant.Companion.CURRENT_SONG_INDEX
 import com.example.reproductor2.AppConstant.Companion.IS_PLAYING
 import com.example.reproductor2.databinding.ActivityMainBinding
@@ -101,6 +100,7 @@ class MainActivity : AppCompatActivity() {
                 playNextSong()
             }
             updateSongInfo(currentSong)
+            updatePlayPauseButton()
         }
     }
 
